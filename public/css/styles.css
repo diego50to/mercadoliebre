@@ -1,0 +1,338 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo,
+header .form {
+  width: 50%;
+}
+
+header div.logo {
+  padding: 10px;
+}
+header .form {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+header nav {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form {
+  position: relative;
+  display: block;
+}
+
+header form input {
+  background-color: #fff;
+  color: #666;
+  padding: 5px;
+  width: 100%;
+}
+
+header .form .submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #666;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding-left: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+div.last-visit,
+div.offers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 18px;
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+.description {
+  display: none;
+  margin-top: 20px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  color: #666;
+  margin-top: 20px;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.card-footer {
+  text-align: center;
+  width: 60%;
+  margin: 20px 0px;
+}
+
+.card-footer i {
+  font-size: 1.5rem;
+  color: #0044aa;
+  padding: 5px;
+  transition: all 200ms;
+}
+
+.card-footer i:hover {
+  color: #00317b;
+}
+
+/* Forms Style */
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  border-radius: 5px;
+  width: 100%;
+  border: transparent;
+  height: 2rem;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.register form h4 {
+  margin: 10px 0px;
+}
+
+.register form label {
+  margin-left: 10px;
+}
+
+/* Animations */
+
+main section article {
+  transition: all 750ms;
+}
+
+main section article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article .description {
+  opacity: 0;
+  transition: all 750ms;
+}
+
+article:hover .description {
+  opacity: 1;
+}
+
+article .fa-truck {
+  transition: all 250ms;
+}
+
+article:hover .fa-truck {
+  transform: rotateZ(-90deg);
+}
+
+/* Input button */
+
+.login input[type="submit"],
+.register input[type="submit"],
+.register input[type="reset"] {
+  background-color: #666;
+  color: white;
+  padding: 6px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.login input[type="submit"] {
+  width: 100%;
+}
+
+.login input[type="submit"]:hover,
+.register input[type="submit"]:hover,
+.register input[type="reset"]:hover {
+  background-color: #0022aa;
+}
+
+@media (min-width: 361px) {
+  main section article .description {
+    display: block;
+  }
+
+  main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.products article {
+    width: 45%;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  main section div.products article {
+    width: 22%;
+  }
+
+  .footer-div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card-footer {
+    text-align: center;
+    width: 30%;
+    margin: 20px 0px;
+  }
+
+  header div.logo,
+  header .form,
+  header div.top-header p {
+    width: 33%;
+  }
+}
